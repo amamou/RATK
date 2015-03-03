@@ -82,25 +82,17 @@ public class RATK {
         naruto.test_ninjutsu();
         
  
-        Autobus PC1=new Autobus (5, 23, 15);
-        Autobus PC3=new Autobus (2, 20, 10);
-        Autobus PC4=new Autobus (3, 23, 15);
-        Autobus PC2=new Autobus (4, 20, 10);
-        Autobus PC5=new Autobus (6, 23, 15);
-        Autobus PC6=new Autobus (7, 20, 10);
+        Konoha.ajouterBus(5,23,15);
+        Konoha.ajouterBus(2,20,10);
+        Konoha.ajouterBus(3,23,15);
+        Konoha.ajouterBus(4,20,10);
+        Konoha.ajouterBus(6,23,15);
+        Konoha.ajouterBus(7,20,10);
         
-        
-        Konoha.ajouterBus(dauphine);
-        Konoha.ajouterBus(PC1);
-        Konoha.ajouterBus(PC2);
-          Konoha.ajouterBus(PC3);
-        Konoha.ajouterBus(PC4);
-          Konoha.ajouterBus(PC5);
-        Konoha.ajouterBus(PC6);
-        
-        System.out.println("**** bus  " + PC5.getId_bus() + "  ajouté dans le village de konoha avec succès*****"  );
+
+        System.out.println("**** bus  " + Konoha.Bus.get(1).getId_bus() + "  ajouté dans le village de konoha avec succès*****"  );
         Konoha.supprimerBus(6);
-        System.out.println("**** bus  " + PC5.getId_bus() + "  supprimé du village de konoha avec succès*****"  );
+        System.out.println("**** bus  " + Konoha.Bus.get(6).getId_bus() + "  supprimé du village de konoha avec succès*****"  );
       
     
     

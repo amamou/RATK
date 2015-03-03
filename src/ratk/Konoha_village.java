@@ -43,8 +43,9 @@ public class Konoha_village
     public void setBus(List<Autobus> Bus) {
         this.Bus = Bus;
     }
-  public void ajouterBus(Autobus b)
+  public void ajouterBus(int id,int NbPlaces, int NbArret)
   {
+      Autobus b= new Autobus(id,NbPlaces,NbArret);
       this.Bus.add(b);
   }
   
