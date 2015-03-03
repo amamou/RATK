@@ -71,13 +71,13 @@ public class RATK {
     
     // test création genin and konoha village
         Genin Sakura=new Genin("Sakura","Sharingan",28);
-        System.out.println(Sakura.getNinjaName() + " ninja veut faire partie de Konoha");
+        System.out.println(Sakura.getNom() + " ninja veut faire partie de Konoha");
         Konoha_village Konoha=new Konoha_village();
         boolean accepted=Konoha.nouveau_ninja_a_Konoha("Sakura","Sharingan",28);
         System.out.println(" le ninja est il accepté au sein de Konoha? " + accepted);
         
           Genin naruto=new Genin("Naruto","razengan",2);
-        System.out.println("un nouveu ninja rejoint Konoha, il s'apel "+naruto.getNinjaName()+" et son pouvoir est "+naruto.getPower());
+        System.out.println("un nouveu ninja rejoint Konoha, il s'apel "+naruto.getNom()+" et son pouvoir est "+naruto.getPower());
         System.out.println("\n Ce ninja est il digne du rang Genin,  a t il reussi sont test de ninjutsu?\n");
         naruto.test_ninjutsu();
         

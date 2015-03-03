@@ -31,6 +31,31 @@ public class Passager
         Etat=0;
     }
 
+    public String getNom() {
+        return Nom;
+    }
+
+    public void setNom(String Nom) {
+        this.Nom = Nom;
+    }
+
+    public int getDestination() {
+        return Destination;
+    }
+
+    public void setDestination(int Destination) {
+        this.Destination = Destination;
+    }
+
+    public int getEtat() {
+        return Etat;
+    }
+
+    public void setEtat(int Etat) {
+        this.Etat = Etat;
+    }
+
+    
     public boolean estAssis()
     {
        return (Etat==1);

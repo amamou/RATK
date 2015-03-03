@@ -11,7 +11,6 @@ package ratk;
 public class Genin extends Passager 
 {
     // instance variables - replace the example below with your own
-    public String ninja_name;
     public String power;
     public int strength;
 
@@ -20,7 +19,6 @@ public class Genin extends Passager
      * 
      */
     public Genin(){
-        this.ninja_name=null;
         this.power=null;
         this.strength=0;
     }
@@ -28,7 +26,7 @@ public class Genin extends Passager
     public Genin(String ninja_name,String power, int strength)
     {
         // initialise instance variables
-        this.ninja_name=ninja_name;
+        this.setNom(ninja_name);
         this.power=power;
         this.strength=strength;
         
@@ -42,12 +40,9 @@ public class Genin extends Passager
         else System.out.println("test ninjustsu perdu!");;
     }
  
-
-    public String getNinjaName(){ return this.ninja_name;}
     public String getPower(){ return this.power;}
     public int getStrength(){ return this.strength;}
     
-    public void setNinjaName(String ninja_name){this.ninja_name=ninja_name;}
     public void setPower(String ninja_name){this.power=power;}
     public void setStrength(int strength){this.strength=strength;}
     

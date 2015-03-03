@@ -46,7 +46,7 @@ public class GeninTest {
         System.out.println("getNinjaName");
         Genin instance = new Genin();
         String expResult = "";
-        String result = instance.getNinjaName();
+        String result = instance.getNom();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -88,7 +88,7 @@ public class GeninTest {
         System.out.println("setNinjaName");
         String ninja_name = "";
         Genin instance = new Genin();
-        instance.setNinjaName(ninja_name);
+        instance.setNom(ninja_name);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
