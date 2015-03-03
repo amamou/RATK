@@ -39,15 +39,21 @@ public class AutobusTest {
     /**
      * Test of getId_bus method, of class Autobus.
      */
+    
+     Autobus instance =new Autobus(1,10,5) ;
+     Passager p= new Passager ("aymen",3);
+     
+       
+     
     @Test
     public void testGetId_bus() {
         System.out.println("getId_bus");
-        Autobus instance = null;
-        int expResult = 0;
+       
+        int expResult = 1;
         int result = instance.getId_bus();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+   
     }
 
     /**
@@ -55,12 +61,7 @@ public class AutobusTest {
      */
     @Test
     public void testSetId_bus() {
-        System.out.println("setId_bus");
-        int id_bus = 0;
-        Autobus instance = null;
-        instance.setId_bus(id_bus);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -69,10 +70,12 @@ public class AutobusTest {
     @Test
     public void testAllerArretSuivant() {
         System.out.println("allerArretSuivant");
-        Autobus instance = null;
-        instance.allerArretSuivant();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
+         int expResult = 4;
+         int result = instance.getArret();
+        assertEquals(expResult, result);
+       
+ 
     }
 
     /**
@@ -85,7 +88,7 @@ public class AutobusTest {
         Autobus instance = null;
         instance.demanderPlaceAssise(p);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -94,11 +97,11 @@ public class AutobusTest {
     @Test
     public void testDemanderSortie() {
         System.out.println("demanderSortie");
-        Passager p = null;
-        Autobus instance = null;
+        
         instance.demanderSortie(p);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        
+     
     }
 
     /**
@@ -107,12 +110,12 @@ public class AutobusTest {
     @Test
     public void testAPlace() {
         System.out.println("aPlace");
-        Autobus instance = null;
-        boolean expResult = false;
+      
+        boolean expResult = true;
         boolean result = instance.aPlace();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    
     }
 
     /**
@@ -121,52 +124,21 @@ public class AutobusTest {
     @Test
     public void testGetArret() {
         System.out.println("getArret");
-        Autobus instance = null;
-        int expResult = 0;
+         instance.setArret(3);
+        int expResult = 3;
         int result = instance.getArret();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setArret method, of class Autobus.
+        assertEquals(expResult, result);     }
+     /**
+     * Test of getArret method, of class Autobus.
      */
-    @Test
-    public void testSetArret() {
-        System.out.println("setArret");
-        int a = 0;
-        Autobus instance = null;
-        instance.setArret(a);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setNbArrets method, of class Autobus.
-     */
-    @Test
-    public void testSetNbArrets() {
-        System.out.println("setNbArrets");
-        int a = 0;
-        Autobus instance = null;
-        instance.setNbArrets(a);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNbArrets method, of class Autobus.
-     */
-    @Test
-    public void testGetNbArrets() {
+    @Test public void testGetNbArrets() {
         System.out.println("getNbArrets");
-        Autobus instance = null;
-        int expResult = 0;
+       
+        int expResult = 5;
         int result = instance.getNbArrets();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -175,11 +147,8 @@ public class AutobusTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Autobus instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
+       
+        
     }
 }
