@@ -43,6 +43,7 @@ public class AutobusTest {
      Autobus instance =new Autobus(1,10,5) ;
      Passager p= new Passager ("aymen",3);
      
+     
        
      
     @Test
@@ -70,10 +71,11 @@ public class AutobusTest {
     @Test
     public void testAllerArretSuivant() {
         System.out.println("allerArretSuivant");
-       
-         int expResult = 4;
-         int result = instance.getArret();
-        assertEquals(expResult, result);
+           
+         int expResult = 1;
+         instance.allerArretSuivant();
+         //int result = instance.getArret();
+        assertEquals(expResult, instance.getArret());
        
  
     }
@@ -84,10 +86,13 @@ public class AutobusTest {
     @Test
     public void testDemanderPlaceAssise() {
         System.out.println("demanderPlaceAssise");
-        Passager p = null;
-        Autobus instance = null;
+     
+       
         instance.demanderPlaceAssise(p);
-        // TODO review the generated test code and remove the default call to fail.
+       int result= instance.getPlaces();
+         int result2  =instance.getNbPassagers();
+          assertEquals(9, result);
+        assertEquals(1, result2);
        
     }
 
@@ -97,12 +102,11 @@ public class AutobusTest {
     @Test
     public void testDemanderSortie() {
         System.out.println("demanderSortie");
-        
+         p.monterDans(instance);
         instance.demanderSortie(p);
-        
-        
-     
-    }
+        int nb_p=instance.getNbPassagers();
+         assertEquals(0, nb_p);
+         }
 
     /**
      * Test of aPlace method, of class Autobus.
