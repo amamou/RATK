@@ -82,6 +82,30 @@ public class Autobus
         return NbArrets;
     }     
 
+    public int getPlaces() {
+        return Places;
+    }
+
+    public void setPlaces(int Places) {
+        this.Places = Places;
+    }
+
+    public List<Passager> getPassagers() {
+        return Passagers;
+    }
+
+    public void setPassagers(List<Passager> Passagers) {
+        this.Passagers = Passagers;
+    }
+
+    public int getNbPassagers() {
+        return NbPassagers;
+    }
+
+    public void setNbPassagers(int NbPassagers) {
+        this.NbPassagers = NbPassagers;
+    }
+
     @Override
     public String toString() {
         return "Autobus{" + "id_bus=" + id_bus + ", Arret=" + Arret + ", NbArrets=" + NbArrets + ", Places=" + Places + ", Passagers=" + Passagers + ", NbPassagers=" + NbPassagers + '}';
