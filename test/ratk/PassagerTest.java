@@ -29,15 +29,15 @@ public class PassagerTest {
     /**
      * Test of estAssis method, of class Passager.
      */
+     Autobus bus =new Autobus(1,10,5) ;
+     Passager instance= new Passager ("aymen",3);
+     
     @Test
     public void testEstAssis() {
         System.out.println("estAssis");
-        Passager instance = new Passager();
         boolean expResult = false;
         boolean result = instance.estAssis();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -46,12 +46,9 @@ public class PassagerTest {
     @Test
     public void testEstDehors() {
         System.out.println("estDehors");
-        Passager instance = new Passager();
-        boolean expResult = false;
+        boolean expResult = true;
         boolean result = instance.estDehors();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -60,10 +57,9 @@ public class PassagerTest {
     @Test
     public void testAccepterPlace() {
         System.out.println("accepterPlace");
-        Passager instance = new Passager();
+        int expResult=1;
         instance.accepterPlace();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(expResult, instance.getEtat());
     }
 
     /**
@@ -72,11 +68,10 @@ public class PassagerTest {
     @Test
     public void testAccepterSortie() {
         System.out.println("accepterSortie");
-        Passager instance = new Passager();
+        int expResult=0;
         instance.accepterSortie();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+        assertEquals(expResult, instance.getEtat());
+    }   
 
     /**
      * Test of nouvelArret method, of class Passager.
@@ -111,11 +106,5 @@ public class PassagerTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Passager instance = new Passager();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 }
