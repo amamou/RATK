@@ -79,12 +79,14 @@ public class PassagerTest {
     @Test
     public void testNouvelArret() {
         System.out.println("nouvelArret");
-        Autobus bus = null;
-        int arret = 0;
-        Passager instance = new Passager();
+       
+        int arret = 3;
+        
         instance.nouvelArret(bus, arret);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
+        assertTrue("passager est arrivé à destination",  arret==instance.getDestination()) ;
+        
+        
     }
 
     /**
@@ -93,11 +95,11 @@ public class PassagerTest {
     @Test
     public void testMonterDans() {
         System.out.println("monterDans");
-        Autobus bus = null;
-        Passager instance = new Passager();
+    
         instance.monterDans(bus);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
+      assertTrue( "monter dans le bus",  bus.aPlace()) ;
+    
     }
 
     /**
