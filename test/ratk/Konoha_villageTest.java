@@ -30,15 +30,12 @@ public class Konoha_villageTest {
     /**
      * Test of getNinjas method, of class Konoha_village.
      */
+    
+        Konoha_village instance = new Konoha_village();
+        
     @Test
     public void testGetNinjas() {
         System.out.println("getNinjas");
-        Konoha_village instance = new Konoha_village();
-        List expResult = null;
-        List result = instance.getNinjas();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -47,11 +44,6 @@ public class Konoha_villageTest {
     @Test
     public void testSetNinjas() {
         System.out.println("setNinjas");
-        List<Genin> Ninjas = null;
-        Konoha_village instance = new Konoha_village();
-        instance.setNinjas(Ninjas);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -60,12 +52,6 @@ public class Konoha_villageTest {
     @Test
     public void testGetBus() {
         System.out.println("getBus");
-        Konoha_village instance = new Konoha_village();
-        List expResult = null;
-        List result = instance.getBus();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -74,11 +60,6 @@ public class Konoha_villageTest {
     @Test
     public void testSetBus() {
         System.out.println("setBus");
-        List<Autobus> Bus = null;
-        Konoha_village instance = new Konoha_village();
-        instance.setBus(Bus);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -86,12 +67,11 @@ public class Konoha_villageTest {
      */
     @Test
     public void testAjouterBus() {
-        System.out.println("ajouterBus");
-        Autobus b = null;
-        Konoha_village instance = new Konoha_village();
-        instance.ajouterBus(b);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        System.out.println("supprimerBus");
+        instance.ajouterBus(5,23,15);
+        int expresult=5;
+        int result=instance.Bus.get(1).getId_bus();
+        assertEquals(expresult,result);
     }
 
     /**
@@ -100,11 +80,10 @@ public class Konoha_villageTest {
     @Test
     public void testSupprimerBus() {
         System.out.println("supprimerBus");
-        int idBus = 0;
-        Konoha_village instance = new Konoha_village();
-        instance.supprimerBus(idBus);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.supprimerBus(5);
+        int expResult=0;
+        int result=instance.Bus.size();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -113,14 +92,8 @@ public class Konoha_villageTest {
     @Test
     public void testNouveau_ninja_a_Konoha() {
         System.out.println("nouveau_ninja_a_Konoha");
-        String name_ninja = "";
-        String power = "";
-        int strength = 0;
-        Konoha_village instance = new Konoha_village();
-        boolean expResult = false;
-        boolean result = instance.nouveau_ninja_a_Konoha(name_ninja, power, strength);
+        boolean expResult = true;
+        boolean result = instance.nouveau_ninja_a_Konoha("nom", "force", 10);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 }
