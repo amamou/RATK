@@ -29,13 +29,13 @@ public class GeninTest {
     /**
      * Test of test_ninjutsu method, of class Genin.
      */
+    Genin instance = new Genin("Naruto","power",15);
+    
     @Test
     public void testTest_ninjutsu() {
-        System.out.println("test_ninjutsu");
-        Genin instance = new Genin();
-        instance.test_ninjutsu();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        boolean expResult=true;
+        boolean result=instance.test_ninjutsu();
+        assertEquals(expResult, result);
     }
 
     /**
@@ -44,12 +44,6 @@ public class GeninTest {
     @Test
     public void testGetNinjaName() {
         System.out.println("getNinjaName");
-        Genin instance = new Genin();
-        String expResult = "";
-        String result = instance.getNom();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -58,12 +52,6 @@ public class GeninTest {
     @Test
     public void testGetPower() {
         System.out.println("getPower");
-        Genin instance = new Genin();
-        String expResult = "";
-        String result = instance.getPower();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -72,12 +60,6 @@ public class GeninTest {
     @Test
     public void testGetStrength() {
         System.out.println("getStrength");
-        Genin instance = new Genin();
-        int expResult = 0;
-        int result = instance.getStrength();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -86,11 +68,6 @@ public class GeninTest {
     @Test
     public void testSetNinjaName() {
         System.out.println("setNinjaName");
-        String ninja_name = "";
-        Genin instance = new Genin();
-        instance.setNom(ninja_name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -99,11 +76,6 @@ public class GeninTest {
     @Test
     public void testSetPower() {
         System.out.println("setPower");
-        String ninja_name = "";
-        Genin instance = new Genin();
-        instance.setPower(ninja_name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -112,11 +84,6 @@ public class GeninTest {
     @Test
     public void testSetStrength() {
         System.out.println("setStrength");
-        int strength = 0;
-        Genin instance = new Genin();
-        instance.setStrength(strength);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -125,10 +92,10 @@ public class GeninTest {
     @Test
     public void testEntreinementNinjustu() {
         System.out.println("entreinementNinjustu");
-        Genin naruto = null;
-        Genin instance = new Genin();
-        instance.entreinementNinjustu(naruto);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+        int expResult=16;
+        instance.entreinementNinjustu();
+        int result=instance.getStrength();
+        assertEquals(expResult, result);
+        
+}
 }

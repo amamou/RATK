@@ -31,13 +31,10 @@ public class Genin extends Passager
         this.strength=strength;
         
     }
-     public void test_ninjutsu()
+     public boolean test_ninjutsu()
     {
         // put your code here
-        if(this.strength>10) 
-        System.out.println("test ninjustsu reussi!");
-
-        else System.out.println("test ninjustsu perdu!");;
+        return (this.strength>10);
     }
  
     public String getPower(){ return this.power;}
@@ -47,12 +44,8 @@ public class Genin extends Passager
     public void setStrength(int strength){this.strength=strength;}
     
       
-    public void entreinementNinjustu(Genin naruto){
-            
-        int p=naruto.getStrength();
-        naruto.setStrength(p++);
-        
-   
+    public void entreinementNinjustu(){
+        strength++;
     }
     
    
