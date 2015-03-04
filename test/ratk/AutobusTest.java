@@ -63,6 +63,10 @@ public class AutobusTest {
     @Test
     public void testSetId_bus() {
        
+         Autobus bus = new Autobus(2,15,6);
+         
+        bus.setId_bus(3);
+        assertTrue(bus.getId_bus() == 3);
     }
 
     /**

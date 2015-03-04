@@ -44,6 +44,9 @@ public class GeninTest {
     @Test
     public void testGetNinjaName() {
         System.out.println("getNinjaName");
+             assertTrue(instance.getNom().equals("Naruto"));
+          
+        
     }
 
     /**
@@ -52,6 +55,9 @@ public class GeninTest {
     @Test
     public void testGetPower() {
         System.out.println("getPower");
+         assertTrue(instance.getPower().equals("power"));
+          
+    
     }
 
     /**
@@ -60,6 +66,7 @@ public class GeninTest {
     @Test
     public void testGetStrength() {
         System.out.println("getStrength");
+         assertTrue(instance.getStrength()==15);
     }
 
     /**
@@ -68,6 +75,10 @@ public class GeninTest {
     @Test
     public void testSetNinjaName() {
         System.out.println("setNinjaName");
+         Genin instance2 = new Genin();
+         instance2.setNom("Hamza");
+        assertTrue(instance2.getNom().equals("Hamza"));
+        
     }
 
     /**
@@ -75,7 +86,10 @@ public class GeninTest {
      */
     @Test
     public void testSetPower() {
-        System.out.println("setPower");
+        
+         Genin instance2 = new Genin();
+           instance2.setPower("Fatality");
+        assertTrue(instance2.getPower().equals("Fatality"));
     }
 
     /**
@@ -84,6 +98,9 @@ public class GeninTest {
     @Test
     public void testSetStrength() {
         System.out.println("setStrength");
+         Genin instance2 = new Genin();
+             instance2.setStrength(16);
+        assertTrue(instance2.getStrength() == 16);
     }
 
     /**

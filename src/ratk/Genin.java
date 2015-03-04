@@ -19,7 +19,7 @@ public class Genin extends Passager
      * 
      */
     public Genin(){
-        this.power=null;
+        this.power="";
         this.strength=0;
     }
     
@@ -40,7 +40,7 @@ public class Genin extends Passager
     public String getPower(){ return this.power;}
     public int getStrength(){ return this.strength;}
     
-    public void setPower(String ninja_name){this.power=power;}
+    public void setPower(String power){this.power=power;}
     public void setStrength(int strength){this.strength=strength;}
     
       
