@@ -8,6 +8,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -18,8 +19,17 @@ public class GeninTest {
     public GeninTest() {
     }
     
+     Genin instance;
+             
     @BeforeClass
     public static void setUpClass() {
+        
+    }
+    
+       @Before
+    public void setUp() {
+        
+           instance = new Genin("Naruto","power",15);     
     }
     
     @AfterClass
@@ -29,7 +39,7 @@ public class GeninTest {
     /**
      * Test of test_ninjutsu method, of class Genin.
      */
-    Genin instance = new Genin("Naruto","power",15);
+
     
     @Test
     public void testTest_ninjutsu() {

@@ -10,6 +10,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -19,11 +20,18 @@ public class Konoha_villageTest {
     
     public Konoha_villageTest() {
     }
-    
+     Konoha_village instance;
     @BeforeClass
     public static void setUpClass() {
+          
     }
     
+     @Before
+    public void setUp() {
+       instance = new Konoha_village();
+         
+    }
+     
     @AfterClass
     public static void tearDownClass() {
     }
@@ -32,7 +40,7 @@ public class Konoha_villageTest {
      * Test of getNinjas method, of class Konoha_village.
      */
     
-        Konoha_village instance = new Konoha_village();
+     
         
     @Test
     public void testGetNinjas() {
@@ -54,6 +62,8 @@ public class Konoha_villageTest {
     public void testSetNinjas() {
         System.out.println("setNinjas");
          instance.nouveau_ninja_a_Konoha("aymen", "Magic", 50);
+         String name=instance.getNinjas().get(0).getNom();
+         assertTrue(name.equals("aymen"));
         
         
     

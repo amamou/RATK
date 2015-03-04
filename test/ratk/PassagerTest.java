@@ -8,6 +8,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -18,8 +19,19 @@ public class PassagerTest {
     public PassagerTest() {
     }
     
+    
+     Autobus bus;
+     Passager instance;
+     
     @BeforeClass
     public static void setUpClass() {
+    }
+    
+    @Before
+    public void setUp() {
+       
+          bus =new Autobus(1,10,5) ;
+     instance= new Passager ("aymen",3);
     }
     
     @AfterClass
@@ -29,8 +41,7 @@ public class PassagerTest {
     /**
      * Test of estAssis method, of class Passager.
      */
-     Autobus bus =new Autobus(1,10,5) ;
-     Passager instance= new Passager ("aymen",3);
+    
      
     @Test
     public void testEstAssis() {

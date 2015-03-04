@@ -23,7 +23,9 @@ public class RATK {
    
      
      
-   Autobus dauphine = new Autobus(1,6, 10);
+    Autobus dauphine = new Autobus(1,10,5) ;
+    
+   System.out.println (dauphine.toString());
 
    /* Passager aymen = new Passager("aymen", 5);
 
