@@ -67,10 +67,10 @@ public class Konoha_villageTest {
      */
     @Test
     public void testAjouterBus() {
-        System.out.println("supprimerBus");
+        System.out.println("AjouterBus");
         instance.ajouterBus(5,23,15);
         int expresult=5;
-        int result=instance.Bus.get(1).getId_bus();
+        int result=instance.Bus.get(0).getId_bus();
         assertEquals(expresult,result);
     }
 
@@ -91,7 +91,7 @@ public class Konoha_villageTest {
      */
     @Test
     public void testNouveau_ninja_a_Konoha() {
-        System.out.println("nouveau_ninja_a_Konoha");
+        System.out.println("Ajouter nouveau ninja dans le village");
         boolean expResult = true;
         boolean result = instance.nouveau_ninja_a_Konoha("nom", "force", 10);
         assertEquals(expResult, result);
