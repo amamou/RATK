@@ -20,9 +20,12 @@ public class RATK {
     
     
   
-    Autobus dauphine = new Autobus(1,6, 10);
+   
+     
+     
+   Autobus dauphine = new Autobus(1,6, 10);
 
-    Passager aymen = new Passager("aymen", 5);
+   /* Passager aymen = new Passager("aymen", 5);
 
     dauphine.allerArretSuivant();
     // debogue
@@ -38,13 +41,10 @@ public class RATK {
     System.out.println(dauphine);
     System.out.println(aymen);
     System.out.println(hamza);
-
     Passager anissa = new Passager("Anissa", 5);
     anissa.monterDans(dauphine);
-
     dauphine.allerArretSuivant();
     // debogue
-  
     System.out.println(dauphine);
     
     System.out.println(aymen);
@@ -96,7 +96,7 @@ public class RATK {
       
     
     
-    
+    */
     
     }
     

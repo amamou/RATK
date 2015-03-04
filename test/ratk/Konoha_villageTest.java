@@ -4,6 +4,7 @@
  */
 package ratk;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -36,6 +37,14 @@ public class Konoha_villageTest {
     @Test
     public void testGetNinjas() {
         System.out.println("getNinjas");
+       
+        instance.nouveau_ninja_a_Konoha("aymen", "Magic", 50);
+        
+
+        String result=instance.getNinjas().get(0).getNom();
+      
+         assertTrue(result.equals("aymen"));
+        
     }
 
     /**
@@ -44,6 +53,10 @@ public class Konoha_villageTest {
     @Test
     public void testSetNinjas() {
         System.out.println("setNinjas");
+         instance.nouveau_ninja_a_Konoha("aymen", "Magic", 50);
+        
+        
+    
     }
 
     /**
@@ -52,6 +65,9 @@ public class Konoha_villageTest {
     @Test
     public void testGetBus() {
         System.out.println("getBus");
+        instance.ajouterBus(1, 10, 15);
+        int result=instance.getBus().get(0).getId_bus();
+          assertTrue(result==1);
     }
 
     /**
