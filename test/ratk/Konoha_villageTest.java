@@ -29,6 +29,7 @@ public class Konoha_villageTest {
      @Before
     public void setUp() {
        instance = new Konoha_village();
+       
          
     }
      
@@ -40,35 +41,22 @@ public class Konoha_villageTest {
      * Test of getNinjas method, of class Konoha_village.
      */
     
-     
+       @Test
+    public void testNouveau_ninja_a_Konoha() {
+        System.out.println("Ajouter nouveau ninja dans le village");
+        boolean expResult = true;
+        boolean result = instance.nouveau_ninja_a_Konoha("nom", "force", 10);
+        assertEquals(expResult, result);
+    }
         
     @Test
     public void testGetNinjas() {
         System.out.println("getNinjas");
        
         instance.nouveau_ninja_a_Konoha("aymen", "Magic", 50);
-        
-
         String result=instance.getNinjas().get(0).getNom();
-      
          assertTrue(result.equals("aymen"));
-        
     }
-
-    /**
-     * Test of setNinjas method, of class Konoha_village.
-     */
-    @Test
-    public void testSetNinjas() {
-        System.out.println("setNinjas");
-         instance.nouveau_ninja_a_Konoha("aymen", "Magic", 50);
-         String name=instance.getNinjas().get(0).getNom();
-         assertTrue(name.equals("aymen"));
-        
-        
-    
-    }
-
     /**
      * Test of getBus method, of class Konoha_village.
      */
@@ -106,20 +94,13 @@ public class Konoha_villageTest {
     @Test
     public void testSupprimerBus() {
         System.out.println("supprimerBus");
-        instance.supprimerBus(5);
-        int expResult=0;
-        int result=instance.Bus.size();
-        assertEquals(expResult, result);
+        instance.supprimerBus(5); // suppression du bus numéro 5
+       assertTrue(instance.Bus.isEmpty());
+       
     }
-
+    
     /**
      * Test of nouveau_ninja_a_Konoha method, of class Konoha_village.
      */
-    @Test
-    public void testNouveau_ninja_a_Konoha() {
-        System.out.println("Ajouter nouveau ninja dans le village");
-        boolean expResult = true;
-        boolean result = instance.nouveau_ninja_a_Konoha("nom", "force", 10);
-        assertEquals(expResult, result);
-    }
+  
 }

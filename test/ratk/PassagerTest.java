@@ -41,7 +41,19 @@ public class PassagerTest {
     /**
      * Test of estAssis method, of class Passager.
      */
+    @Test
+    public void testSetDestination() {
+        System.out.println("setNbPassagers");
+         instance.setDestination(4);
+        assertTrue(instance.getDestination() == 4);
+    }
     
+      @Test
+    public void testSetEtat() {
+        System.out.println("setNbPassagers");
+         instance.setEtat(1);
+        assertTrue(instance.getEtat() == 1);
+    }
      
     @Test
     public void testEstAssis() {
@@ -119,5 +131,7 @@ public class PassagerTest {
     @Test
     public void testToString() {
         System.out.println("toString");
+        String a=instance.toString();
+        assertTrue(a.equals("Passager{Nom=aymen, Destination=3}"));
     }
 }

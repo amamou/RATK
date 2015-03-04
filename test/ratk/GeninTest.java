@@ -35,18 +35,10 @@ public class GeninTest {
     @AfterClass
     public static void tearDownClass() {
     }
-
     /**
      * Test of test_ninjutsu method, of class Genin.
      */
 
-    
-    @Test
-    public void testTest_ninjutsu() {
-        boolean expResult=true;
-        boolean result=instance.test_ninjutsu();
-        assertEquals(expResult, result);
-    }
 
     /**
      * Test of getNinjaName method, of class Genin.
@@ -56,7 +48,7 @@ public class GeninTest {
         System.out.println("getNinjaName");
              assertTrue(instance.getNom().equals("Naruto"));
           
-        
+       
     }
 
     /**
@@ -125,4 +117,10 @@ public class GeninTest {
         assertEquals(expResult, result);
         
 }
+        @Test
+    public void testTest_ninjutsu() {
+        boolean expResult=true;
+        boolean result=instance.test_ninjutsu();
+        assertEquals(expResult, result);
+    }
 }

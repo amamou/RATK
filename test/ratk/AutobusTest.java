@@ -66,45 +66,33 @@ public class AutobusTest {
      * Test of setId_bus method, of class Autobus.
      */
     @Test
-    public void testSetId_bus() {
-       
-         
+    public void testSetId_bus() {    
        instance.setId_bus(3);
         assertTrue(instance.getId_bus() == 3);
     }
-
     /**
      * Test of allerArretSuivant method, of class Autobus.
      */
     @Test
     public void testAllerArretSuivant() {
-        System.out.println("allerArretSuivant");
-           
          int expResult = 1;
          instance.allerArretSuivant();
         assertEquals(expResult, instance.getArret());
-       
- 
     }
-
     /**
      * Test of demanderPlaceAssise method, of class Autobus.
      */
     @Test
     public void testDemanderPlaceAssise() {
         System.out.println("demanderPlaceAssise");
-     
-       
         instance.demanderPlaceAssise(p);
        int result= instance.getPlaces();
          int result2  =instance.getNbPassagers();
           assertEquals(9, result);
         assertEquals(1, result2);
-       
     }
-
     /**
-     * Test of demanderSortie method, of class Autobus.
+     * Test of demanderSortie method, of class Autobus.                                                                        
      */
     @Test
     public void testDemanderSortie() {
@@ -114,7 +102,6 @@ public class AutobusTest {
         int nb_p=instance.getNbPassagers();
          assertEquals(0, nb_p);
          }
-
     /**
      * Test of aPlace method, of class Autobus.
      */

@@ -27,9 +27,10 @@ public class RATK {
     
    System.out.println (dauphine.toString());
 
-   /* Passager aymen = new Passager("aymen", 5);
+    Passager aymen = new Passager("aymen", 3);
+System.out.println(aymen.toString());
 
-    dauphine.allerArretSuivant();
+   /* dauphine.allerArretSuivant();
     // debogue
     System.out.println(dauphine);
 

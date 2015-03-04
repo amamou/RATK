@@ -3,14 +3,12 @@
  * and open the template in the editor.
  */
 package ratk;
-
 /**
  *
  * @author AUMEN
  */
 public class Genin extends Passager 
-{
-    // instance variables - replace the example below with your own
+{  // instance variables - replace the example below with your own
     public String power;
     public int strength;
 
@@ -22,14 +20,12 @@ public class Genin extends Passager
         this.power="";
         this.strength=0;
     }
-    
     public Genin(String ninja_name,String power, int strength)
     {
         // initialise instance variables
         this.setNom(ninja_name);
         this.power=power;
-        this.strength=strength;
-        
+        this.strength=strength;    
     }
      public boolean test_ninjutsu()
     {

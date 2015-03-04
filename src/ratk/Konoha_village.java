@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 package ratk;
-
 /**
  *
  * @author AUMEN
@@ -14,41 +13,32 @@ public class Konoha_village
 {
     // instance variables - replace the example below with your own
     public List<Genin> Ninjas;
-    public List<Autobus> Bus;
-    
-
-    /**
+    public List<Autobus> Bus; 
+     /**
+     * 
      * Constructor for objects of class Konoha_village
      */
     public Konoha_village()
     {
-        // initialise instance variables
-        
+        // initialise instance variables   
         this.Ninjas=new ArrayList<Genin>();
         this.Bus=new ArrayList<Autobus>();
     }
-
+    
+    
+    
     public List<Genin> getNinjas() {
         return Ninjas;
     }
-
-    public void setNinjas(List<Genin> Ninjas) {
-        this.Ninjas = Ninjas;
-    }
-
     public List<Autobus> getBus() {
         return Bus;
     }
 
-    public void setBus(List<Autobus> Bus) {
-        this.Bus = Bus;
-    }
   public void ajouterBus(int id,int NbPlaces, int NbArret)
   {
       Autobus b= new Autobus(id,NbPlaces,NbArret);
       this.Bus.add(b);
   }
-  
   public void supprimerBus(int idBus)
   {
        for (Autobus b : Bus) {
@@ -60,7 +50,7 @@ public class Konoha_village
         System.out.println(index);
         this.Bus.remove(index);
     }
-        // System.out.println("succès");
+        
     }
         
   }
