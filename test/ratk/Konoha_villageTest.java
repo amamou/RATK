@@ -91,7 +91,7 @@ public class Konoha_villageTest {
      */
     @Test
     public void testNouveau_ninja_a_Konoha() {
-        System.out.println("nouveau_ninja_a_Konoha");
+        System.out.println("Ajouter nouveau ninja dans le village");
         boolean expResult = true;
         boolean result = instance.nouveau_ninja_a_Konoha("nom", "force", 10);
         assertEquals(expResult, result);
